@@ -1,13 +1,13 @@
-**#Connect Azure with Powershell**
+#Connect Azure with Powershell
 
-**Connect and Authenticate**\
+#Connect and Authenticate
 Connect-AzureRmAccount
 
-**Get Current Connected Subscription/Context**\
+#Get Current Connected Subscription/Context
 Get-AzureRmContext
 
-**Get All Azure Subscriptions**\
+#Get All Azure Subscriptions
 Get-AzRmSubscription | more
 
-**Select Azure Subscription**\
+#Select Azure Subscription
 Select-AzureRmSubscription -SubscriptionName <Insert Subscription Name>
