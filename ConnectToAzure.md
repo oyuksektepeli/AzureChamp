@@ -1,4 +1,4 @@
-#Connect Azure with Powershell
+**Connect Azure with Powershell**
 
 #Connect and Authenticate
 Connect-AzureRmAccount
