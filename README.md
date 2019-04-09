@@ -95,3 +95,6 @@ Eğitim İçeriği:
 		g. CI/CD for Azure VMs (Azure Devops)
 		
 	Workshop5: 1 Day: Continuous Deployment and Automation on Azure
+	
+	![alt text](https://1drv.ms/u/s!AsE1qIjwa9_ohcYU3mIIh_eEcc6_iQ)
+	
