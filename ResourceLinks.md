@@ -16,6 +16,9 @@ https://github.com/Azure/azure-quickstart-templates
 **Azure Resource Manager**\
 https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview
 
+**Azure Speed**\
+http://www.azurespeed.com/
+
 **Azure Virtual Machine Series**\
 https://azure.microsoft.com/en-us/pricing/details/virtual-machines/series/
 
