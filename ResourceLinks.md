@@ -22,3 +22,6 @@ http://www.azurespeed.com/
 **Azure Virtual Machine Series**\
 https://azure.microsoft.com/en-us/pricing/details/virtual-machines/series/
 
+**Linux Distributions on Azure**\
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/endorsed-distros
+
