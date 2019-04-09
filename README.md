@@ -1,4 +1,7 @@
-# AzureChamp
+ ![alt text](https://user-images.githubusercontent.com/11184353/55832309-f4c15180-5b1d-11e9-93ce-136e2711bf8f.png)
+
+# AzureChamp 
+# Azure For ITPro / Devops Engineers
 Eğitim İçeriği:
 
 	1. Review of Azure Portals
@@ -97,4 +100,4 @@ Eğitim İçeriği:
 	Workshop5: 1 Day: Continuous Deployment and Automation on Azure
 	
 	
-	
+![alt text](https://user-images.githubusercontent.com/11184353/55832078-503f0f80-5b1d-11e9-8119-b56296e3728a.png) 
