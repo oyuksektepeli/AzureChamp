@@ -25,3 +25,7 @@ https://azure.microsoft.com/en-us/pricing/details/virtual-machines/series/
 **Linux Distributions on Azure**\
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/endorsed-distros
 
+**SSH Tools**\
+https://mobaxterm.mobatek.net/
+https://www.putty.org/
+https://mobaxterm.mobatek.net/
