@@ -1,0 +1,47 @@
+Azure Champ Training | Hands-On-Lab-Week1 (09-10 Nisan 2019)
+
+1. Azure subscription'iniza disardan liveID'si olan bir hesabi eklemek için davet yollayin. Sonra o hesabi kaldirin.
+2. Azure'a Powershell'den login olmak için hangi komut kullanilmaktadir?
+3. Azure'a Powerhsell'den baglantiktan sonra TenantID'sini alan komutu nedir? Çiktisini yapistirin?
+4. Azure'a Powerhsell'den baglantiktan sonra subscription ID'sini alan komutu nedir? Çiktisini yapistirin?
+5. Bulundugunuz lokasyona en hizli baglanti saglayan Azure region'ini bulmak için hangi siteden yararlanilir? Yaziniz?
+6. Kaç tip Azure sanal makine serisi vardir? D-Series ve DC-Series arasindaki farklar nedir ? Yaziniz.
+7. Kaç tip Disk tipi vardir? Yaziniz?
+8. AZ-CH-TR-RG adinda East Europe'da Resource Group olusturun ve bunu Delete Protect haline getirin?
+9. Azure CloudShell kullanarak AZ-CH-TR2-RG adinda West Europe'da Resource Group ?
+10.Olusan AZ-CH-TR2-RG Resource Group'a Owner ve Cost Center TAG'larini olusturun?
+11. Azure Portal üzerinden asagidaki özelliklerde Windows Sanal Makine açin?
+AZ-CH-TR2-RG Resource Group içerisine 
+AZTRCH01 adinda olsun
+Windows Server 2019 DC
+B1ms
+INBOUND PORT kurallarina RDP, PShell ve HTTPS'e izin verin
+Boot ve Quest Diagnotics On olsun
+Auto-Shutdown açik olsun ve 11:00 PM seçin
+Tags olarak Departman = Uretim
+    Sahibi = Mustafa Kara
+    KapanisTarihi = 11.04.2019
+12. AZ-CH-TR-RG Resource Group'ta yeni bir Alert Rule olusturun ( Ihtiyaçiniza göre, condition, action group v.d alanlari doldurun)
+13. Visual Studio Code Laptop'iniza indirin
+14. Github üyesi degilseniz üye olun.
+15. Github desktop indirin ve hesabinizla login olun.
+16. Github hesabiniza yeni bir Repository olusturun, linki alin ve Github desktop'tan az önce linkini kopyaladiginiz repo'yu internentten kopyalayin ve lokal yer olarak C:\AzPSDepo gösterin. 
+17. 2. ve 3 adimdaki komutlari PowerShell ISE'ye yapistirin ve lokal C:\AzPSDepo Githun dosyasina kaydedin.
+18. Azure Portal üzerinden asagidaki özelliklerde Linux Sanal Makine açin?
+AZ-CH-TR2-RG2 Resource Group içerisine 
+AZTRCH02 adinda olsun
+Ubuntu 16.04 LTS seçin
+B1ms
+INBOUND PORT kurallarina SSH'e izin verin
+Boot ve Quest Diagnotics On olsun
+Auto-Shutdown açik olsun ve 10:00 PM seçin
+Tags olarak Departman = AR-GE
+    Sahibi = Onder Deger
+    KapanisTarihi = 12.04.2019
+19. PuTTY indirin ve local PC'inize kurun
+20. PuTTYGen açin, Generate tiklayin ve mouse sallayin ve Key Passphare complex bir sifre yazin (Private ppk'yi saklayin)
+21. Olusturdugunuz Linux sunucuya PuTTY ile baglanin (ppk'yi kullanin)
+22. Visual Studio 2017 yada 2019 (Account'unuzu girin) kullanarak 201-vm-copy-managed-dsk template kendinize özel hale getirerek validate tiklayin, hesabinizi, Resource Grubunuzu, Subscription'izi seçin ve Password'ünüzü girin validate edin. Sifreyi tekrar girin, valid oldugunu görün ve Deploy edin. (Tekrar sifrenizi girmenizi ister Complex bir Password girin)
+23. Olusturmus oldugunuz Windows Server 2019 Azure VM'ine 1 adet 1023 Gib Premium SSD Data Disk ekleyin
+24. Açmis oldugunuz sanal makineleri ve Resource Group'lari silin :)
+25. Herkes lütfen yapsin, uygulayan ile uygulamayan bir olmaz. 
