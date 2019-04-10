@@ -7,6 +7,9 @@ https://visualstudio.microsoft.com/vs/community/
 **Visual Studio Code**\
 https://code.visualstudio.com/
 
+**Azure Resources Naming Conventions**\
+https://docs.microsoft.com/en-us/azure/architecture/best-practices/naming-conventions
+
 **Azure Services**\
 https://nnmer.github.io/azure-services-map/dist/
 
