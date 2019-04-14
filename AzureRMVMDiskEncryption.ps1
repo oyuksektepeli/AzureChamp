@@ -49,3 +49,7 @@ Set-AzureRmVMDiskEncryptionExtension -ResourceGroupName $rgName `
 
 
 Get-AzureRmVmDiskEncryptionStatus  -ResourceGroupName $rgName -VMName "managedserver"
+
+#Disable Disk Encryption
+
+Disable-AzVMDiskEncryption -ResourceGroupName 'MyVirtualMachineResourceGroup' -VMName 'MySecureVM'
