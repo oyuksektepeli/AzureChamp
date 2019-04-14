@@ -16,7 +16,7 @@ Select-AzureRmSubscription -SubscriptionName "Subscription Name"
 #Connect Azure with Azure CLI
 
 #Connect and Authenticate
-Az-login
+Az login
 
 #Get All Azure Subscriptions
 az account list
