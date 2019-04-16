@@ -13,7 +13,7 @@ AzCopy /Source:C:\upload\  /Dest:https://testaccount.blob.core.windows.net/newco
 **Copy only new files**\
 AzCopy /Source:C:\upload\  /Dest:https://testaccount.blob.core.windows.net/newcontainer1 DestKey: /Pattern:"*.txt" /S /XN
 
-**Copy only read only attribute files**\
+**Copy only has read only attribute files**\
 AzCopy /Source:C:\upload\  /Dest:https://testaccount.blob.core.windows.net/newcontainer1 DestKey: /Pattern:"*.txt" /IA:R
 
 **Concurrent Copy**\
