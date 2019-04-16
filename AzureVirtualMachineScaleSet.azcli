@@ -1,0 +1,25 @@
+az login
+az account list -o table
+az account set --subscription "Microsoft Azure"
+az account show
+
+az group create --location westeurope --name ac-vmss-rg
+az vmss create --resource-group ac-vmss-rg --name ac-vmss-test --image UbuntuLTS --upgrade-policy-mode automatic --instance-count 2 --admin-username oyuksektepeli --generate-ssh-keys
+az monitor autoscale create --resource-group ac-vmss-rg --resource ac-vmss-test --resource-type Microsoft.Compute/virtualMachineScaleSets --name autoscale --min-count 2 --max-count 10 --count 2
+az monitor autoscale rule create --resource-group ac-vmss-rg --autoscale-name autoscale --condition "Percentage CPU > 70 avg 5m" --scale out 3
+az monitor autoscale rule create --resource-group ac-vmss-rg --autoscale-name autoscale --condition "Percentage CPU < 30 avg 5m" --scale in 1
+az vmss list-instance-connection-info --resource-group ac-vmss-rg --name ac-vmss-test 
+ssh oyuksektepeli@52.233.165.222 -p 50001
+sudo apt-get -y install stress
+sudo stress --cpu 10 --timeout 420 &
+
+top
+Ctrl-c
+exit
+ssh oyuksektepeli@52.233.165.222 -p 50002
+sudo apt-get -y install stress
+sudo stress --cpu 10 --timeout 420 &
+exit
+watch az vmss list-instance --resource-group ac-vmss-rg --name ac-vmss-test --o table
+
+

@@ -9,3 +9,6 @@ Stop-AzureRmVM -ResourceGroupName "mac-dev-rg" -Name "mclinuxvm01"
 
 #Stop Azure VM with Azure CLI
 az vm stop --resource-group mac-dev-rg --name mclinuxvm01
+
+
+

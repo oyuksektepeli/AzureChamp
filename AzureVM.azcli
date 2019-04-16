@@ -1,0 +1,25 @@
+#Create a Linux VM
+
+az vm create --resource-group mac-linux-rg --name ac-linuxvm01 --image UbuntuLTS --admin-username oyuksektepeli --generate-ssh-keys
+ssh oyuksektepeli@23.97.191.25 -p 22
+
+#To see a list of the most commonly used images
+az vm image list --output table
+
+#See Full list of VM Images from publisher
+az vm image list --offer CentOS --all --output table
+
+#To deploy a VM using a specific image
+az vm create --resource-group myResourceGroupVM --name myVM2 --image OpenLogic:CentOS:6.5:latest --generate-ssh-keys
+
+#Find available VM sizes
+az vm list-sizes --location eastus --output table
+
+#Create VM with specific size
+az vm create \
+    --resource-group myResourceGroupVM \
+    --name myVM3 \
+    --image UbuntuLTS \
+    --size Standard_F4s \
+    --generate-ssh-keys
+

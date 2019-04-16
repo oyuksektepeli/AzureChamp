@@ -35,3 +35,6 @@ https://mobaxterm.mobatek.net/
 
 **Deploy with Visual Studio**\
 https://github.com/Azure/azure-quickstart-templates/tree/master/201-vm-copy-managed-disks/
+
+**Detailed SSH Usage for Azure VMs**\
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/create-ssh-keys-detailed
