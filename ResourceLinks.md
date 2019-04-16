@@ -41,3 +41,6 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/linux/create-ssh-keys-de
 
 **Azure Products by Region**\
 https://azure.microsoft.com/en-us/global-infrastructure/services/?products=
+
+**Azure Disk Encryption**\
+https://docs.microsoft.com/en-us/azure/security/azure-security-disk-encryption-windows

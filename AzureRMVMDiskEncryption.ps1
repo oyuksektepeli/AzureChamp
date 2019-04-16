@@ -15,12 +15,7 @@ Add-AzureKeyVaultKey -VaultName $keyVaultName `
     -Destination "Software"
 $appName = "ADE-APP"
 
-
-
 $securePassword = ConvertTo-SecureString -String "2019AzureChamp" -AsPlainText -Force
-
-
-
 
 $app = New-AzureRmADApplication -DisplayName $appName `
     -HomePage "https://acade.ps.local" `
