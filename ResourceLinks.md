@@ -38,3 +38,6 @@ https://github.com/Azure/azure-quickstart-templates/tree/master/201-vm-copy-mana
 
 **Detailed SSH Usage for Azure VMs**\
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/create-ssh-keys-detailed
+
+**Azure Products by Region**\
+https://azure.microsoft.com/en-us/global-infrastructure/services/?products=
