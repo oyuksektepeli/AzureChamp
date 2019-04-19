@@ -50,4 +50,4 @@ https://docs.microsoft.com/en-us/azure/security/azure-security-disk-encryption-w
 https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-instance-ids
 
 **Azure Workshop Security  And Management**\
-https://github.com/Microsoft/MCW-Azure-security-and-management/blob/master/Hands-on%20lab/HOL%20step-by-step%20-%20Azure%20security%20and%20management.md
+https://github.com/Microsoft/MCW-Azure-security-and-management/tree/master/Hands-on%20lab
