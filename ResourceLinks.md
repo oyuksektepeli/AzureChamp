@@ -39,5 +39,12 @@ https://github.com/Azure/azure-quickstart-templates/tree/master/201-vm-copy-mana
 **Detailed SSH Usage for Azure VMs**\
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/create-ssh-keys-detailed
 
-**Workshop Azure Security and Management**\
-https://github.com/Microsoft/MCW-Azure-security-and-management/blob/master/Hands-on%20lab/HOL%20step-by-step%20-%20Azure%20security%20and%20management.md
+**Azure Products by Region**\
+https://azure.microsoft.com/en-us/global-infrastructure/services/?products=
+
+**Azure Disk Encryption**\
+https://docs.microsoft.com/en-us/azure/security/azure-security-disk-encryption-windows
+
+
+**Virtual Machine Scale Set IDs**\
+https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-instance-ids
