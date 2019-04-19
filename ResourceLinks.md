@@ -48,3 +48,6 @@ https://docs.microsoft.com/en-us/azure/security/azure-security-disk-encryption-w
 
 **Virtual Machine Scale Set IDs**\
 https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-instance-ids
+
+**Azure Workshop Security  And Management**\
+https://github.com/Microsoft/MCW-Azure-security-and-management/tree/master/Hands-on%20lab
