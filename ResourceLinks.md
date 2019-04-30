@@ -54,3 +54,8 @@ https://github.com/Microsoft/MCW-Azure-security-and-management/tree/master/Hands
 
 **Azure Worskhop Privacy and Complince**\
 https://github.com/Microsoft/MCW-Azure-Security-Privacy-and-Compliance
+
+**Azure Storage Lifecycle Management**\
+https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/storage/blobs/storage-lifecycle-management-concepts.md
+
+
