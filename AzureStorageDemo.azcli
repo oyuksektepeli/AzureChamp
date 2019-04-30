@@ -1,0 +1,12 @@
+az login
+az account set --subscription "Microsoft Azure"
+az account show
+az group create --name mac-storagedemo-rg --location "West Europe"
+az account list-locations
+az storage account create --name macdemostorage --resource-group mac-storagedemo-rg --location westeurope --sku Standard_LRS --kind StorageV2
+az storage account show-connection-string --name macdemostorage --resource-group mac-storagedemo-rg
+
+SET AZURE_STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=macdemostorage;AccountKey=smdUyOPo2QQQ1jc5a538/2Whei7j+Nb2ZxALtQfDEb6SoqgmB0PiSc48vpLGatT8rHuRWDUMtZZTTYFi3RTrmw=="
+
+
+az storage container create --name macfiles --connection-string "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=macdemostorage;AccountKey=smdUyOPo2QQQ1jc5a538/2Whei7j+Nb2ZxALtQfDEb6SoqgmB0PiSc48vpLGatT8rHuRWDUMtZZTTYFi3RTrmw=="
