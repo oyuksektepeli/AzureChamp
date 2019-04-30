@@ -1,0 +1,8 @@
+#Show blob delete policy
+az storage blob service-properties delete-policy show --account-name "accountname"
+
+#Set blob delete policy
+az storage blob service-properties delete-policy update --enable true --days-retained 7 --account-name "accountname"
+
+
+
