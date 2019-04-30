@@ -1,3 +1,5 @@
+**AZ COPY COMMANDS for Version before AzCopy10**\
+
 **Copy File with new Name**\
 AzCopy /Source:C:\upload\testfile1.txt /Dest:https://testaccount.blob.core.windows.net/newcontainer1/myfile.txt /DestKey:
 
