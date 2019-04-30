@@ -5,6 +5,9 @@ az group create \
     --name myResourceGroup \
     --location eastus
 
+#list azure locations
+az account list-locations
+
 #Create a storage account
     az storage account create \
     --name mystorageaccount \
@@ -14,6 +17,11 @@ az group create \
     --encryption blob
     --kind StorageV2
 
+#Get Azure Storage account Connection String
+az storage account show-connection-string --name "storageaccountcli" --resource-group mac-storage-rg 
+
+#Set Connection String as Environment Variable
+SET AZURE_STORAGE_CONNECTION_STRING = "ConnectionString"
 
 #Specify storage account credentials
 
@@ -29,11 +37,11 @@ export AZURE_STORAGE_KEY="myStorageAccountKey"
 #set environment variable on windows
 SET AZURE_STORAGE_ACCOUNT="ConnectionString"
 
-az storage account show-connection-string --name "storageaccountname" --resource-group "resourcegroupname"
-
 #Create a container
 az storage container create --name mystoragecontainer
 az storage container create --name "containername" --public-access blob
+
+#Change Access Level
 az storage container set-permission --name "containername" --public-access container
 
 
