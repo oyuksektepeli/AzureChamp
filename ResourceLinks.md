@@ -58,4 +58,16 @@ https://github.com/Microsoft/MCW-Azure-Security-Privacy-and-Compliance
 **Azure Storage Lifecycle Management**\
 https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/storage/blobs/storage-lifecycle-management-concepts.md
 
+**Use Azure DNS for private domains**\
+https://docs.microsoft.com/en-us/azure/dns/private-dns-overview
+
+**Best practices to set up networking for workloads migrated to Azure**\
+https://docs.microsoft.com/en-us/azure/migrate/migrate-best-practices-networking
+
+**Azure Security Groups**\
+https://docs.microsoft.com/en-us/azure/virtual-network/security-overview#service-tags
+
+**Azure Application Security Groups**\
+https://azure.microsoft.com/en-us/blog/applicationsecuritygroups/
+
 
