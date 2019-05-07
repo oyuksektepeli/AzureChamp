@@ -79,5 +79,9 @@ https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-create-route-tab
 **Azure vNET Peering**\
 https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-connect-virtual-networks-portal
 
+**Azure Service Endpoints**\
+https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview
 
 
+**Virtual network integration for Azure services**\
+https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-for-azure-services
