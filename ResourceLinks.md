@@ -70,4 +70,14 @@ https://docs.microsoft.com/en-us/azure/virtual-network/security-overview#service
 **Azure Application Security Groups**\
 https://azure.microsoft.com/en-us/blog/applicationsecuritygroups/
 
+**Azure Routing**
+https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview
+
+**Azure Custom Routing**\
+https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-create-route-table-portal
+
+**Azure vNET Peering**\
+https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-connect-virtual-networks-portal
+
+
 
