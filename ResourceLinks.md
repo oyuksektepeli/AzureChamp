@@ -64,6 +64,9 @@ https://docs.microsoft.com/en-us/azure/dns/private-dns-overview
 **Best practices to set up networking for workloads migrated to Azure**\
 https://docs.microsoft.com/en-us/azure/migrate/migrate-best-practices-networking
 
+**Azure Networking**\
+https://docs.microsoft.com/en-us/azure/virtual-network/
+
 **Azure Security Groups**\
 https://docs.microsoft.com/en-us/azure/virtual-network/security-overview#service-tags
 
