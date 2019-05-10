@@ -31,7 +31,6 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/linux/endorsed-distros
 **SSH Tools**\
 https://mobaxterm.mobatek.net/
 https://www.putty.org/
-https://mobaxterm.mobatek.net/
 
 **Deploy with Visual Studio**\
 https://github.com/Azure/azure-quickstart-templates/tree/master/201-vm-copy-managed-disks/
