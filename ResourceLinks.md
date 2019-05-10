@@ -91,3 +91,7 @@ https://github.com/microsoft/MCW-Enterprise-class-networking
 
 **Azure Workshop - Business Continuity and Disaster Recovery**\
 https://github.com/Microsoft/MCW-Business-Continuity-and-Disaster-Recovery
+
+**Azure Pricing**\
+https://azure.microsoft.com/en-us/pricing/
+
