@@ -44,7 +44,6 @@ https://azure.microsoft.com/en-us/global-infrastructure/services/?products=
 **Azure Disk Encryption**\
 https://docs.microsoft.com/en-us/azure/security/azure-security-disk-encryption-windows
 
-
 **Virtual Machine Scale Set IDs**\
 https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-instance-ids
 
