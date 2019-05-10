@@ -85,6 +85,11 @@ https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-connect-virtual-
 **Azure Service Endpoints**\
 https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview
 
-
 **Virtual network integration for Azure services**\
 https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-for-azure-services
+
+**Azure Workshop - Enterprise Class Networking**\
+https://github.com/microsoft/MCW-Enterprise-class-networking
+
+**Azure Workshop - Business Continuity and Disaster Recovery**\
+https://github.com/Microsoft/MCW-Business-Continuity-and-Disaster-Recovery
