@@ -31,7 +31,6 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/linux/endorsed-distros
 **SSH Tools**\
 https://mobaxterm.mobatek.net/
 https://www.putty.org/
-https://mobaxterm.mobatek.net/
 
 **Deploy with Visual Studio**\
 https://github.com/Azure/azure-quickstart-templates/tree/master/201-vm-copy-managed-disks/
@@ -44,7 +43,6 @@ https://azure.microsoft.com/en-us/global-infrastructure/services/?products=
 
 **Azure Disk Encryption**\
 https://docs.microsoft.com/en-us/azure/security/azure-security-disk-encryption-windows
-
 
 **Virtual Machine Scale Set IDs**\
 https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-instance-ids
@@ -85,6 +83,15 @@ https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-connect-virtual-
 **Azure Service Endpoints**\
 https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview
 
-
 **Virtual network integration for Azure services**\
 https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-for-azure-services
+
+**Azure Workshop - Enterprise Class Networking**\
+https://github.com/microsoft/MCW-Enterprise-class-networking
+
+**Azure Workshop - Business Continuity and Disaster Recovery**\
+https://github.com/Microsoft/MCW-Business-Continuity-and-Disaster-Recovery
+
+**Azure Pricing**\
+https://azure.microsoft.com/en-us/pricing/
+
