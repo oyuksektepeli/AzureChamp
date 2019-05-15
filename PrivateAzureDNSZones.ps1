@@ -1,28 +1,28 @@
 Login-AzureRmAccount
 Select-AzureRmSubscription -SubscriptionName "Microsoft Azure"
 
-$rgName = "mac-vnet-rg"
-$zoneName = "trainer3.local"
+$rgName = "mac-network-rg"
+$zoneName = "macdns.local"
 
-$macvnet60 = "macvnet60"
-$hostname60 = "macwin2k1660"
-$hostip1 = "10.60.60.4"
+$macvnet80 = "macvnet80"
+$hostname80 = "macwin2k1680"
+$hostip1 = "10.80.80.4"
 
-$macvnet70 = "macvnet70"
-$hostname70 ="macwin2k1670"
-$hostip2 = "10.70.70.4"
+$macvnet90 = "macvnet90"
+$hostname90 ="macwin2k1690"
+$hostip2 = "10.90.90.4"
 
-$vnet60 = Get-AzureRmVirtualNetwork -Name $macvnet60 -ResourceGroupName $rgName
-$vnet70 = Get-AzureRmVirtualNetwork -Name $macvnet70 -ResourceGroupName $rgName
+$vnet80 = Get-AzureRmVirtualNetwork -Name $macvnet80 -ResourceGroupName $rgName
+$vnet90 = Get-AzureRmVirtualNetwork -Name $macvnet90 -ResourceGroupName $rgName
 
-New-AzureRmDnsZone -Name $zoneName -ResourceGroupName $rgName -ZoneType Private -ResolutionVirtualNetworkId @($vnet60.Id)
+New-AzureRmDnsZone -Name $zoneName -ResourceGroupName $rgName -ZoneType Private -ResolutionVirtualNetworkId @($vnet80.Id)
 New-AzureRmDnsZone -Name "mac.local" -ResourceGroupName $rgName -ZoneType Private
 
-New-AzureRmDnsRecordSet -Name $hostname60 -RecordType A -ZoneName $zoneName -ResourceGroupName $rgName -Ttl 3600
-New-AzureRmDnsRecordSet -Name $hostname70 -RecordType A -ZoneName $zoneName -ResourceGroupName $rgName  -Ttl 3600
+New-AzureRmDnsRecordSet -Name $hostname80 -RecordType A -ZoneName $zoneName -ResourceGroupName $rgName -Ttl 3600
+New-AzureRmDnsRecordSet -Name $hostname90 -RecordType A -ZoneName $zoneName -ResourceGroupName $rgName  -Ttl 3600
 
 Get-AzureRmDnsRecordSet -ZoneName $zoneName -ResourceGroupName $rgName
 
-Set-AzureRmDnsZone -Name $zoneName -ResourceGroupName $rgName -RegistrationVirtualNetworkId @($vnet70.Id)
+Set-AzureRmDnsZone -Name $zoneName -ResourceGroupName $rgName -RegistrationVirtualNetworkId @($vnet90.Id)
 Set-AzureRmDnsZone -Name $zoneName -ResourceGroupName $rgName -ResolutionVirtualNetworkId @($vnet60.Id)
 Get-AzureRmDnsZone -Name $zoneName -ResourceGroupName $rgName 
