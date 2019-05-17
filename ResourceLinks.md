@@ -95,3 +95,6 @@ https://github.com/Microsoft/MCW-Business-Continuity-and-Disaster-Recovery
 **Azure Pricing**\
 https://azure.microsoft.com/en-us/pricing/
 
+**Microsoft Cloud Workshops**\
+https://microsoftcloudworkshop.com/
+
