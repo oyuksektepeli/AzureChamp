@@ -98,3 +98,6 @@ https://azure.microsoft.com/en-us/pricing/
 **Microsoft Cloud Workshops**\
 https://microsoftcloudworkshop.com/
 
+**Azure Architecture Center**\
+https://docs.microsoft.com/en-us/azure/architecture/
+
