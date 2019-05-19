@@ -95,17 +95,15 @@ https://github.com/Microsoft/MCW-Business-Continuity-and-Disaster-Recovery
 **Azure Pricing**\
 https://azure.microsoft.com/en-us/pricing/
 
-<<<<<<< HEAD
 **Self signed Certificate for Azure Point to Site VPN**\
 https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site
 
 **Azure point to Site Vpn**\
 https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-point-to-site-resource-manager-portal
-=======
+
 **Microsoft Cloud Workshops**\
 https://microsoftcloudworkshop.com/
 
 **Azure Architecture Center**\
 https://docs.microsoft.com/en-us/azure/architecture/
 
->>>>>>> 9b3b2ce1b377725bc218ff60447a54377974a34a
