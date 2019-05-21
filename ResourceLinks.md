@@ -110,3 +110,16 @@ https://docs.microsoft.com/en-us/azure/architecture/
 **Azure Site to Site VPN**\
 https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal
 
+**Azure Files**\
+https://docs.microsoft.com/en-us/azure/storage/files/storage-files-introduction
+
+**Azure File Sync**\
+https://docs.microsoft.com/en-us/azure/storage/files/storage-sync-files-extend-servers
+
+**Azure File Sync Cloud Tiering**\
+https://docs.microsoft.com/en-us/azure/storage/files/storage-sync-cloud-tiering
+
+**Azure File Sync Planning**\
+https://docs.microsoft.com/en-us/azure/storage/files/storage-sync-files-planning
+
+
