@@ -1,0 +1,38 @@
+$recoveryServicesVaultName = "mac-rsv"
+$resourceGroupName = "mac-backup-rg"
+$virtualMachineName = "mac-ubuntu01VM"
+$location = "westeurope"
+$adminName = "macadmin"
+
+# Create the Resource Group
+az group create --name $resourceGroupName --location $location
+
+# Create a Virtual Machine
+az vm create --resource-group $resourceGroupName --name $virtualMachineName --image UbuntuLTS --admin-username $adminName --generate-ssh-keys
+
+# open up port 80
+az vm open-port --port 80 --resource-group $resourceGroupName --name $virtualMachineName
+
+#get public IP
+az vm show --resource-group $resourceGroupName --name $virtualMachineName -d --query [publicIps] --o tsv
+
+#login to VM
+ssh macadmin@publicIpAddress
+
+# update packages
+sudo apt-get -y update
+
+# install NGINX
+sudo apt-get -y install nginx
+
+#create recovery vault
+az backup vault create --resource-group $resourceGroupName --name $recoveryServicesVaultName --location $location
+
+# enable backup
+az backup protection enable-for-vm --resource-group $resourceGroupName --vault-name $recoveryServicesVaultName --vm $virtualMachineName --policy-name DefaultPolicy
+
+# initial backup
+az backup protection backup-now --resource-group $resourceGroupName --vault-name $recoveryServicesVaultName --container-name $virtualMachineName --item-name $virtualMachineName --retain-until 18-10-2019
+
+# watch backup
+az backup job list --resource-group $resourceGroupName --vault-name $recoveryServicesVaultName --output table
