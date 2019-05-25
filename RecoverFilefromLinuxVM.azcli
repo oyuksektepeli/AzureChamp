@@ -1,0 +1,35 @@
+$recoveryServicesVaultName = "mac-rsv00"
+$resourceGroupName = "mac-vm-rg"
+$virtualMachineName = "mac-ubuntu00"
+$location = "westeurope"
+$adminName = "macadmin"
+
+#get public IP
+az vm show --resource-group $resourceGroupName --name $virtualMachineName -d --query [publicIps] --o tsv
+
+
+#log in to vm
+ssh macadmin@<publicIP>
+
+#delete file
+sudo rm /var/www/html/index.nginx-debian.html
+
+# get recovery point name
+aazachineName --query [0].name --output tsv
+
+# mount recovery drive
+az backup restore files mount-rp --resource-group $resourceGroupName --vault-name $recoveryServicesVaultName --container-name $virtualMachineName --item-name $virtualMachineName --rp-name <rpname>
+
+#run script
+
+scp myVM_we_1571974050985163527.sh macadmin@<public ip>:
+
+#log in to vm
+ssh macadmin@<publicIP>
+
+# add execute permissions
+chmod +x myVM_we_1571974050985163527.sh
+
+./ name
+
+sudo cp <dirname>/var/www/html/index.nginx-debian.html /var/www/html/
