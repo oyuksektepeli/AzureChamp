@@ -122,4 +122,7 @@ https://docs.microsoft.com/en-us/azure/storage/files/storage-sync-cloud-tiering
 **Azure File Sync Planning**\
 https://docs.microsoft.com/en-us/azure/storage/files/storage-sync-files-planning
 
+**Azure Paired Regions**\
+https://docs.microsoft.com/tr-tr/azure/best-practices-availability-paired-regions
+
 
