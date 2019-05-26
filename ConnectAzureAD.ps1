@@ -19,6 +19,17 @@ Get-AzureADTenantDetail
 
 Get-AzureADDomain
 
+#To Connect Specific Tenant
+# login
+Login-AzureRmAccount
+# perform other Azure operations...
+Get-AzureRmContext
+Select-AzureRmSubscription -name
+$currentAzureContext = Get-AzureRmContext
+$tenantId = $currentAzureContext.Tenant.Id
+$accountId = $currentAzureContext.Account.Id
+Connect-AzureAD -TenantId $tenantId -AccountId $accountId
+
 
 
 
