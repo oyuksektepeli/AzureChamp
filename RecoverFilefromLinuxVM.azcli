@@ -15,7 +15,7 @@ ssh macadmin@<publicIP>
 sudo rm /var/www/html/index.nginx-debian.html
 
 # get recovery point name
-aazachineName --query [0].name --output tsv
+az backup recoverypoint list --resource-group mac-backup-rg --vault-name mac-rsvault00 --item-name mac-ubuntu00 --container-name mac-ubuntu00 --query [0].Name --output tsv
 
 # mount recovery drive
 az backup restore files mount-rp --resource-group $resourceGroupName --vault-name $recoveryServicesVaultName --container-name $virtualMachineName --item-name $virtualMachineName --rp-name <rpname>
