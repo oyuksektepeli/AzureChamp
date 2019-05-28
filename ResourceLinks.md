@@ -125,4 +125,7 @@ https://docs.microsoft.com/en-us/azure/storage/files/storage-sync-files-planning
 **Azure Paired Regions**\
 https://docs.microsoft.com/tr-tr/azure/best-practices-availability-paired-regions
 
+**Azure Backup**\
+https://docs.microsoft.com/en-us/azure/backup/backup-azure-vms-introduction
+
 
