@@ -24,7 +24,7 @@ Get-AzureADDomain
 Login-AzureRmAccount
 # perform other Azure operations...
 Get-AzureRmContext
-Select-AzureRmSubscription -name
+Select-AzureRmSubscription -SubscriptionName "Microsoft Azure"
 $currentAzureContext = Get-AzureRmContext
 $tenantId = $currentAzureContext.Tenant.Id
 $accountId = $currentAzureContext.Account.Id

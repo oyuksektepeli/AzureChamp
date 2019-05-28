@@ -8,7 +8,7 @@ $PasswordProfile.Password = "agxsFX72xwsSAi"
 #Find an existing user
 Get-AzureADUser -SearchString "Istanbul"
 
-Get-AzureADUser -Filter "State eq 'Istanbul'"
+Get-AzureADUser -Filter "City eq 'Istanbul'"
 
 #Creating a new user
 $user = @{
