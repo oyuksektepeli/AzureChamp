@@ -128,4 +128,9 @@ https://docs.microsoft.com/tr-tr/azure/best-practices-availability-paired-region
 **Azure Backup**\
 https://docs.microsoft.com/en-us/azure/backup/backup-azure-vms-introduction
 
+**Azure Active Directory**\
+https://azure.microsoft.com/en-us/pricing/details/active-directory/
+
+
+
 

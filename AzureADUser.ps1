@@ -1,7 +1,7 @@
 #Log into Azure
 Connect-AzureAD
 
-$domain = "ContosoNed.onmicrosoft.com"
+$domain = "arenamschamp.onmicrosoft.com"
 $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
 $PasswordProfile.Password = "agxsFX72xwsSAi"
 
