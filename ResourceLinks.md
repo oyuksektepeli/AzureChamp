@@ -131,6 +131,15 @@ https://docs.microsoft.com/en-us/azure/backup/backup-azure-vms-introduction
 **Azure Active Directory**\
 https://azure.microsoft.com/en-us/pricing/details/active-directory/
 
+**Azure Active Directory Domain Services**\
+https://docs.microsoft.com/en-us/azure/active-directory-domain-services/overview
+
+**How to decide if Azure AD Domain Services is right for your use-case**\
+https://docs.microsoft.com/en-us/azure/active-directory-domain-services/comparison
+
+**Enable Azure Active Directory authentication over SMB for Azure Files (preview)**\
+https://docs.microsoft.com/en-us/azure/storage/files/storage-files-active-directory-enable
+
 
 
 
