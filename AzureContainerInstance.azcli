@@ -1,0 +1,4 @@
+az acr show --name <acrName> --query loginServer
+az container create --resource-group myResourceGroup --name aci-tutorial-app --image <acrLoginServer>/aci-tutorial-app:v1 --cpu 1 --memory 1 --registry-login-server <acrLoginServer> --registry-username <service-principal-ID> --registry-password <service-principal-password> --dns-name-label <aciDnsLabel> --ports 80
+az container show --resource-group myResourceGroup --name aci-tutorial-app --query instanceView.state
+
