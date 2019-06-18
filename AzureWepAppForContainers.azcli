@@ -1,0 +1,9 @@
+#create app service plan
+az appservice plan create --name myAppServicePlan --resource-group myResourceGroup --sku B1 --is-linux
+
+#create web app
+az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app-name> --deployment-container-image-name <azure-container-registry-name>.azurecr.io/mydockerimage:v1.0.0
+
+
+#set custom container to azure web app for containers
+az webapp config container set --name <app-name> --resource-group myResourceGroup --docker-custom-image-name <azure-container-registry-name>.azurecr.io/mydockerimage:v1.0.0 --docker-registry-server-url https://<azure-container-registry-name>.azurecr.io --docker-registry-server-user <registry-username> --docker-registry-server-password <password>
