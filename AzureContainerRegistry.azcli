@@ -1,0 +1,23 @@
+#create azure container registry
+az group create --name myResourceGroup --location eastus
+az acr create --resource-group myResourceGroup --name myContainerRegistry007 --sku Basic
+
+#download docker image from dockerhub
+docker pull hello-world
+
+#tag docker image
+docker tag hello-world <acrLoginServer>/hello-world:v1
+
+#push docker image to Azure Container Registry
+docker push <acrLoginServer>/hello-world:v1
+
+#remove docker image from Azure Container Registry
+docker rmi <acrLoginServer>/hello-world:v1
+
+#list ACR Repository
+az acr repository list --name <acrName> --output table
+
+#pull image from Azure Container registry
+docker run <acrLoginServer>/hello-world:v1
+
+
