@@ -140,6 +140,9 @@ https://docs.microsoft.com/en-us/azure/active-directory-domain-services/comparis
 **Enable Azure Active Directory authentication over SMB for Azure Files (preview)**\
 https://docs.microsoft.com/en-us/azure/storage/files/storage-files-active-directory-enable
 
+**Azure Container Instance**\
+https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-prepare-app
+
 
 
 
