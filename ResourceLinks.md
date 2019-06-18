@@ -143,6 +143,7 @@ https://docs.microsoft.com/en-us/azure/storage/files/storage-files-active-direct
 **Azure Container Instance**\
 https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-prepare-app
 
-
+**Azure Container Registry**\
+https://docs.microsoft.com/en-us/azure/container-registry/container-registry-intro
 
 
