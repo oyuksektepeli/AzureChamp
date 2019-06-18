@@ -13,6 +13,9 @@ docker search ubuntu
 #download docker image
 docker pull ubuntu
 
+#download specific image
+docker pull ubuntu:19.10
+
 #create and run container from image 
 # 'd' for deattached mode 'it' for interactive mode
 docker run -d -p 8080:80 --name ubuntu1 ubuntu
