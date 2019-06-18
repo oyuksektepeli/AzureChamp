@@ -8,6 +8,9 @@ docker pull hello-world
 #tag docker image
 docker tag hello-world <acrLoginServer>/hello-world:v1
 
+#login azure acr
+docker login --username macacruser --password <password> <acrname>
+
 #push docker image to Azure Container Registry
 docker push <acrLoginServer>/hello-world:v1
 
