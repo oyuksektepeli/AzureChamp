@@ -50,7 +50,7 @@ Docker push mstechacr.azurecr.io/letskube:v2
 #Yaml update edilip Kubectl apply ile de yapılabilir
 
 #set new deployment
-Kubectl set image deployment letskube-deployment letskube=mstechacr.azurecr.io/letskube:v2
+Kubectl set image deployment letskube-deployment mstechacr=mstechacr.azurecr.io/letskube:v2
 
 #For Changing Context if you have more than one cluster
 kubectl config get-contexts
