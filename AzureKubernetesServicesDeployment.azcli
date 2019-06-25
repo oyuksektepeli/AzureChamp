@@ -29,7 +29,7 @@ az aks browse --resource-group mstechaksrg --name mctechakscluster
 az aks scale --resource-group mstechaksrg --name mctechakscluster --node-count 3
 
 #scale aks replica set
-Kubectl scale --replicas=5 deployment/letskube-deployment 
+Kubectl scale --replicas=5 deployment/acicontainer-deployment 
 
 #get deployment details
 Kubectl get deployment
@@ -42,7 +42,7 @@ Kubectl get pods
 #	1. Make changes 
 
 #update image
-Docker build . -t mstechacr.azurecr.io/letskube:v2
+Docker build . -t mstechacr.azurecr.io/acicontainer:v2
 
 #push image
 Docker push mstechacr.azurecr.io/letskube:v2
