@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: acicontainer-deployment
+  labels:
+    app: acicontainer
+spec:
+  replicas: 3
+  template:
+    metadata:
+      name: acicontainer
+      labels:
+        app: acicontainer
+    spec:
+      containers:
+      - name: acicontainer
+        image: macacr.azurecr.io/aci-container:v1
+        imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: acicontainer
+
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: acicontainer-service
+spec:
+  selector:
+    app: acicontainer
+  ports:
+    - port: 80
+  type: LoadBalancer
+  
+  

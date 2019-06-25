@@ -33,8 +33,12 @@ docker ps -a
 #stop docker container
 docker stop ubuntu1
 
+
 #delete container 
 docker rm ubuntu1
+
+#delete all containers
+Docker container rm -f $(docker ps -aq) 
 
 #delete container image
 docker rmi ubuntu

@@ -1,0 +1,59 @@
+#create service principal for azure kubernetes service
+Az ad sp create-for-rbac --skip-assigment
+
+#get azure container registry ID
+$acrid = az acr show --name mstechacr --resource-group mstechaksrg --query "id" --output tsv
+
+#assign read only role for aks on acr
+az role assignment create --assignee "19eeb0c7-2c38-4921-9c6d-5112ff23dcb3" --role Reader --scope $acrid
+
+#create kubernetes cluster
+az aks create --name mctechakscluster --resource-group mstechaksrg --node-count 1 --generate-ssh-keys --service-principal "19eeb0c7-2c38-4921-9c6d-5112ff23dcb3" --client-secret "59868510-b74c-4cdf-9ee5-4c760998c9cf"
+
+#get aks credentials to current local context
+Az aks get-credentials --name mctechakscluster --resource-group mstechaksrg
+
+#apply yaml deployment
+kubectl apply -f .\letskubedeploy.yml
+
+#watch service deployment
+kubectl get service --watch
+
+#test web application
+start microsoft-edge:http://23.97.158.105
+
+#browse aks cluster
+az aks browse --resource-group mstechaksrg --name mctechakscluster
+
+#scale aks cluster
+az aks scale --resource-group mstechaksrg --name mctechakscluster --node-count 3
+
+#scale aks replica set
+Kubectl scale --replicas=5 deployment/letskube-deployment 
+
+#get deployment details
+Kubectl get deployment
+
+#get pod details
+Kubectl get pods
+
+#Update the application 
+
+#	1. Make changes 
+
+#update image
+Docker build . -t mstechacr.azurecr.io/letskube:v2
+
+#push image
+Docker push mstechacr.azurecr.io/letskube:v2
+
+#Yaml update edilip Kubectl apply ile de yapılabilir
+
+#set new deployment
+Kubectl set image deployment letskube-deployment letskube=mstechacr.azurecr.io/letskube:v2
+
+#For Changing Context if you have more than one cluster
+kubectl config get-contexts
+kubectl config use-context docker-for-desktop
+
+
