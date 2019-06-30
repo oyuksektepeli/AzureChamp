@@ -39,6 +39,28 @@ docker container ls
 docker ps -a
 docker container ls -a
 
+#to execute command on container (executing sh command)
+docker container exec -it devcontainer sh
+
+#to see docker volumes
+dokcer volume ls
+
+#to create docker volumes 
+docker volume create devvolume
+
+#to inspect docker volumes
+docker volume inspect devvolume
+
+#to attach volume to container
+docker container run -d --name devcontainer --mount source=devvolume,target=/app nginx
+docker container run -d --name devcontainer2 -v devvolume:/app nginx
+
+#to see volumes on linux
+sudo ls /var/lib/docker/volumes
+sudo ls /var/lib/docker/volumes/devvolume
+
+
+
 #stop docker container
 docker stop ubuntu1
 
@@ -56,6 +78,9 @@ docker image rm ubuntu
 
 #inspect docker image
 docker inspect ubuntu
+
+#see container ip, ports etc. 
+docker inspect containername 
 
 #to see docker image history
 docker history ubuntu
