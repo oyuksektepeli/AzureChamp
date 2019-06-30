@@ -6,6 +6,9 @@ docker info
 
 #to see local docker images
 docker images
+docker images ls
+#show images values without trunc (ex. see the full image id)
+docker images --no-trunc
 
 #search online images from dockerhub
 docker search ubuntu
@@ -18,17 +21,23 @@ docker pull ubuntu:19.10
 
 #create and run container from image 
 # 'd' for deattached mode 'it' for interactive mode
+docker container run ubuntu
 docker run -d -p 8080:80 --name ubuntu1 ubuntu
 docker run it --name temp ubuntu
+
+#attach to existing and running container
+docker attach <containerid>
 
 #to see container logs
 docker logs ubuntu1
 
 #see running containers
 docker ps 
+docker container ls
 
 #see all containers 
 docker ps -a
+docker container ls -a
 
 #stop docker container
 docker stop ubuntu1
@@ -36,6 +45,7 @@ docker stop ubuntu1
 
 #delete container 
 docker rm ubuntu1
+docker container rm ubuntu1
 
 #delete all containers
 Docker container rm -f $(docker ps -aq) 
@@ -49,6 +59,15 @@ docker inspect ubuntu
 
 #to see docker image history
 docker history ubuntu
+
+#to login registry
+docker login
+
+#to tag docker images
+docker tag ubuntu oyuksektepeli/ubuntucustom:v1
+
+#to push images to repository
+docker push oyuksektepeli/ubuntucustom:v1
 
 
 
