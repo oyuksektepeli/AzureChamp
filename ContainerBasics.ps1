@@ -59,11 +59,8 @@ docker container run -d --name devcontainer2 -v devvolume:/app nginx
 sudo ls /var/lib/docker/volumes
 sudo ls /var/lib/docker/volumes/devvolume
 
-
-
 #stop docker container
 docker stop ubuntu1
-
 
 #delete container 
 docker rm ubuntu1
