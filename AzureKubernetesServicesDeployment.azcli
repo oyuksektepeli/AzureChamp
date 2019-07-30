@@ -1,3 +1,6 @@
+#install aks cli
+az aks install-cli
+
 #create service principal for azure kubernetes service
 Az ad sp create-for-rbac --skip-assigment
 
