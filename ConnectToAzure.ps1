@@ -1,16 +1,16 @@
 #Connect Azure with Powershell
 
 #Connect and Authenticate
-Connect-AzureRmAccount
+Connect-AzAccount
 
 #Get Current Connected Subscription/Context
 Get-AzureRmContext
 
 #Get All Azure Subscriptions
-Get-AzRmSubscription | more
+Get-AzSubscription | more
 
 #Select Azure Subscription
-Select-AzureRmSubscription -SubscriptionName "Subscription Name"
+Select-AzContext
 
 
 #Connect Azure with Azure CLI
