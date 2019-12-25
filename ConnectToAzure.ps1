@@ -1,4 +1,5 @@
 #Connect Azure with Powershell
+Install-Module -Name Az -AllowClobber -Scope CurrentUser
 
 #Connect and Authenticate
 Connect-AzAccount
