@@ -1,0 +1,5 @@
+#list all Azure locations
+az account list-locations -o table
+
+#list only location names and displaynames
+az account list-locations --query "[].{DisplayName:displayName, Name:name}" -o table

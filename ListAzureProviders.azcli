@@ -1,0 +1,5 @@
+#list all azure providers
+az provider list
+
+#resource provider explorer site
+https://resources.azure.com/
